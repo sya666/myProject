@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        register: false
+    config:
+      profile: dev
+    discovery:
+      enabled: true
