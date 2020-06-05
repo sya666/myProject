@@ -1,3 +1,1 @@
-# gcbc-admin
-
-glase管理平台后端
+我的spring cloud
