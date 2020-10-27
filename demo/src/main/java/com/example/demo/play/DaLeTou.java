@@ -5,15 +5,15 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * @author sya
- * @Description 选大乐透
- * @date 2020-10-19 14:39
- */
+  * @Author Sheng.ya
+  * @Description 大乐透
+  * @Date 14:01 2020/10/22
+  **/
 public class DaLeTou {
     public static void main(String[] args) {
-//       for(int i =0;i < 19;i++){
+       for(int i =0;i < 5;i++){
            getNumberArray();
-//       }
+       }
     }
     public static void getNumberArray(){
         //前区list集合

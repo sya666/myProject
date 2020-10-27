@@ -10,6 +10,7 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.util.CollectionUtils;
 
 import javax.annotation.Resource;
+import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -75,5 +76,17 @@ class DemoApplicationTests {
             return info;
         }).collect(Collectors.toList());
     }
+
+    @Test
+    public void  systemTest(){
+        System.out.println(System.currentTimeMillis());
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+//        simpleDateFormat.setTimeZone(TimeZone.getTimeZone("GMT+00:00"));
+// time为转换格式后的字符串
+        String time = simpleDateFormat.format(new Date(System.currentTimeMillis()));
+        System.out.println(time);
+    }
+
+
 
 }
